@@ -1,0 +1,61 @@
+Miniship
+
+    A game in which two players battle it off in a mini game of battleship.
+Each player will get to choose three places to place their "miniships" 
+on a 3x3 board. Players will take turn firing at the enemy territory. 
+If the player chooses a location where there is an enemy ship, then
+that ship will be destroied! First to destory all enemy ships win. 
+
+Input Requied:
+>   {number} x3
+>   {number} x3
+>   alterate between {number}
+
+Information Need to Track:
+>   Whose turn. 
+>   Ships Remaining. 
+>   Player A Map interpretation
+>   Player B Map interpretation
+>   Ship locations.
+
+IntentRequirements
+>   Launch Request Intent 
+>   Help Request Intent 
+>   Cancel / Stop Request Intent 
+>   Session Ended Intent
+>   No Intent
+>   Yes Intent
+>   Attack Intent
+>   Score Intent
+
+Alexa Dialogues:
+> Launch Request Intent 
+        Welcome to MiniShip! A game in which two players battle it off in a mini game of battleship.
+    Each player will get to choose three places to place their 1 by 1 "miniships" on a 3 by 3 board. Players 
+    will take turns firing at the enemy territory. First to destory all enemy ships win! Would you like to play?
+
+> No Intent:
+        Ok. Come back to battle it out on the seas in the future!
+
+> Yes Intent:
+        The board is 3x3. Each square will be a number from 0 to 8.
+        Team X, please cover your ears. Team X, please dock your ships by naming out three square piece numbers.
+
+> Attack Intent:
+        The attack landed! Player X lost a ship. 
+        OR 
+        The attack missed! 
+
+        Player X's turn. Fire a canon at the enemy waters by saying Attack and shouting a number from 0 to 8.
+
+> Help Intent:
+        The board is 3x3. Each square will be a number from 0 to 8 like a phone number grid.
+        Player X, say "Attack" and shout a number from 0 to 8 to attack the enemy! 
+        You can also say Score for the current score.
+
+> Score Intent:
+        Player X has A ships remaining. Player Y has B ships remaining. Player X's turn. 
+        Fire a canon at the enemy waters by saying "Attack" and shout a number from 0 to 8 to attack the enemy!
+
+> Cancel / Stop Request Intent:
+        Thanks for playing! Come back to battle it out on the seas in the future!
